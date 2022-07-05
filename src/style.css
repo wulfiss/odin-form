@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header, div.form{
+    justify-self: center;
+    margin: auto;
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
