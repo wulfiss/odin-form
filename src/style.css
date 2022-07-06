@@ -17,10 +17,10 @@ header{
 }
 
 header, div.form{
-    width: 45vw;
-    justify-self: center;
-    margin: 5px auto 5px auto;
-    padding: 1.2vw 5vw;
+    width: 95vw;
+    align-self: center;
+    margin: 5px 5vw 5px 5vw;
+    padding: 1.2vw 1vw;
     background-color: azure;
 }
 
