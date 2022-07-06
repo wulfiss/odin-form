@@ -5,9 +5,11 @@
     font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
   }
 
-body, li{
+body{
     display: flex;
     flex-direction: column;
+    background-color: aquamarine;
+    height: 100vw;
 }
 
 header{
@@ -15,10 +17,13 @@ header{
 }
 
 header, div.form{
+    width: 45vw;
     justify-self: center;
     margin: 5px auto 5px auto;
-    padding: 5vw 10vw;
+    padding: 1.2vw 5vw;
+    background-color: azure;
 }
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -26,6 +31,8 @@ ul{
 }
 
 li{
+    display: flex;
+    flex-direction: row;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -44,8 +51,14 @@ button{
 
 @media (max-width: 768px){
     header, div.form{
+        width: 97vw;
         justify-self: center;
         margin: 5px auto 5px auto;
         padding: 5vw 10vw;
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
     }
 }
