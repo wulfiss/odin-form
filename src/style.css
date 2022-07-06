@@ -16,8 +16,8 @@ header{
 
 header, div.form{
     justify-self: center;
-    margin: auto;
-
+    margin: 5px auto 5px auto;
+    padding: 5vw 10vw;
 }
 ul{
     list-style-type: none;
@@ -28,4 +28,24 @@ ul{
 li{
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+input{
+    width: 300px;
+    height: 29px;
+    padding: 3px;
+    font-size: 0.9rem;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+}
+
+@media (max-width: 768px){
+    header, div.form{
+        justify-self: center;
+        margin: 5px auto 5px auto;
+        padding: 5vw 10vw;
+    }
 }
