@@ -1,4 +1,11 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+  }
+
+body, li{
     display: flex;
     flex-direction: column;
 }
@@ -19,6 +26,6 @@ ul{
 }
 
 li{
-    display: flex;
-    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
