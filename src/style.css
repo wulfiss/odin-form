@@ -2,26 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
   }
 
 body{
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
-    height: 100vw;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
 }
 
 header{
     text-align: center;
+    height: 27vh;
+}
+
+div.form{
+    height: 70vh;
 }
 
 header, div.form{
-    width: 95vw;
     align-self: center;
-    margin: 5px 5vw 5px 5vw;
-    padding: 1.2vw 1vw;
-    background-color: azure;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 10px;
+    width: 50vw;
+    min-width: 340px;
+    max-width: 700px;
+    margin: 10px auto;
 }
 
 ul{
@@ -50,13 +59,6 @@ button{
 }
 
 @media (max-width: 768px){
-    header, div.form{
-        width: 97vw;
-        justify-self: center;
-        margin: 5px auto 5px auto;
-        padding: 5vw 10vw;
-    }
-
     li{
         display: flex;
         flex-direction: column;
