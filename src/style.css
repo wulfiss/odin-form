@@ -130,12 +130,15 @@ input[type='email']:invalid:not(:placeholder-shown){
     box-shadow: none;
 }
 
-div.inMail{
+span.inMail{
     position: absolute;
-    color: white;
-    top: 10px;
-    width: fit-content;
-    height: 10px;
+    color: rgb(255, 0, 0);
+    text-align: right;
+    top: 35px;
+    right: 1px;
+    width: 200px;
+    height: 17px;
+    font-size: 18px;
 }
 
 @media (max-width: 840px){
@@ -168,4 +171,17 @@ div.inMail{
    footer{
     text-align: center;
    }
+
+   span.inMail{
+    display: none;
+    position: absolute;
+    color: rgb(255, 0, 0);
+    text-align: right;
+    top: 65px;
+    right: 1px;
+    width: 200px;
+    height: 17px;
+    font-size: 18px;
+}
+
 }
