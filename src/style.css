@@ -12,14 +12,23 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+    font-family: 'Amatic SC', cursive, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
     color: white;
+    background: url(./img/background-img2.jpg);
+    background-position: center;
     background-color: black;
+}
+
+h1{
+    margin-top: 10px;
+    font-size: 4rem;
 }
 
 header{
     text-align: center;
     min-height: 250px;
+    padding: 25px 10px;
+    line-height: 25px;
 }
 
 div.form{
@@ -30,7 +39,7 @@ div.form{
 
 header, div.form{
     align-self: center;
-    background: linear-gradient(90deg, rgba(131,58,180,0.51) 0%, rgba(253,29,29,0.51) 0%, rgba(252,176,69,0.51) 100%);
+    background: linear-gradient(90deg, rgba(4,4,4,0.7707457983193278) 0%, rgba(231,216,196,0.4906337535014006) 100%, rgba(227,212,212,0.42620798319327735) 100%);
     border-radius: 10px;
     width: 50vw;
     min-width: 340px;
@@ -67,7 +76,6 @@ input{
     width: 300px;
     height: 29px;
     padding: 3px;
-    font-size: 0.9rem;
 }
 
 label{
@@ -77,8 +85,13 @@ label{
 }
 
 button{
-    width: 120px;
-    height: 30px;
+    width: 125px;
+    height: 35px;
+}
+
+p, button, label, input, div.login{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 @media (max-width: 840px){
@@ -87,7 +100,7 @@ button{
         flex-direction: column;
         width: 300px;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         margin-right: 15px;
     }
 
@@ -98,5 +111,13 @@ button{
     label{
         text-align: left;
         margin: 1px 5px;
+    }
+
+    header{
+        padding: 16px 5px;
+    }
+
+    button{
+        align-self: center;
     }
 }
