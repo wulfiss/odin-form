@@ -39,7 +39,7 @@ div.form{
 
 header, div.form{
     align-self: center;
-    background: linear-gradient(90deg, rgba(4,4,4,0.7707457983193278) 0%, rgba(215,211,205,0.16850490196078427) 100%);
+    background: rgba(0, 0, 0, 0.568);
     border-radius: 10px;
     width: 50vw;
     min-width: 340px;
@@ -70,12 +70,18 @@ li{
     justify-content: center;
     align-self: center;
     align-items: baseline;
+    position: relative;
 }
 
 input{
     width: 300px;
     height: 29px;
     padding: 3px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    box-shadow: none;
+    border: none;
 }
 
 label{
@@ -85,13 +91,51 @@ label{
 }
 
 button{
+    font-weight: bold;
     width: 125px;
     height: 35px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+button:active{
+    transform: translateY(1px);
+}
+
+button:hover{
+    background-color: darkgrey;
 }
 
 p, button, label, input, div.login{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+input[type='text']:valid,
+input[type='email']:valid{
+    border: 1px solid rgb(7, 236, 7);
+    box-shadow: none;
+}
+
+input[type='text']:invalid:not(:focus):not(:placeholder-shown),
+input[type='email']:invalid:not(:focus):not(:placeholder-shown){
+    border: 1px solid rgb(236, 7, 7);
+    box-shadow: none;
+}
+
+input[type='text']:invalid:not(:placeholder-shown),
+input[type='email']:invalid:not(:placeholder-shown){
+    border: 1px solid rgb(236, 7, 7);
+    box-shadow: none;
+}
+
+div.inMail{
+    position: absolute;
+    color: white;
+    top: 10px;
+    width: fit-content;
+    height: 10px;
 }
 
 @media (max-width: 840px){
