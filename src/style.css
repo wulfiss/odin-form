@@ -175,8 +175,10 @@ input[type=password] + span.matchPass{
     display: none;
     position: absolute;
     width: fit-content;
+    height: fit-content;
     color: rgb(236, 7, 7);
     bottom: -20px;
+    background-color: rgba(0, 0, 0, 0.397);
 }
 
 @media (max-width: 840px){
