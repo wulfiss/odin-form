@@ -117,6 +117,7 @@ p, button, label, input, div.login{
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 input[type='tel']:valid,
 input[type='text']:valid,
 input[type='email']:valid{
@@ -163,13 +164,21 @@ span.help{
     display: none;
     position: absolute;
 }
-
+input[type='password']:focus + span,
 input[type='tel']:focus + span{
     display: block;
 }
 
 input[type='tel'] + span{
     width: fit-content;
+    top: 40px;
+    right: 20px;
+}
+
+input[type=password] + span{
+    width: fit-content;
+    right: 5px;
+    top: 40px
 }
 
 @media (max-width: 840px){
@@ -204,16 +213,15 @@ input[type='tel'] + span{
         right: 10vw;
     }
 
-   span.inMail{
-    display: none;
-    position: absolute;
-    color: rgb(255, 0, 0);
-    text-align: right;
-    top: 65px;
-    right: 1px;
-    width: 200px;
-    height: 17px;
-    font-size: 18px;
-}
+    input[type='tel'] + span{
+        width: fit-content;
+        top: 70px;
+        right: 5px;
+    }
 
+    input[type=password] + span{
+        width: 380px;
+        right: -55px;
+        top: 65px
+    }
 }
