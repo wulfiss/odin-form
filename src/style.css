@@ -39,7 +39,7 @@ div.form{
 
 header, div.form{
     align-self: center;
-    background: rgba(0, 0, 0, 0.568);
+    background: rgba(0, 0, 0, 0.658);
     border-radius: 10px;
     width: 50vw;
     min-width: 340px;
@@ -91,12 +91,14 @@ label{
 }
 
 button{
+    background-color: darkslategrey;
     font-weight: bold;
     width: 125px;
     height: 35px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    color: rgb(7, 236, 7);
 }
 
 button:active{
@@ -107,17 +109,23 @@ button:hover{
     background-color: darkgrey;
 }
 
+div.login a{
+    color:rgb(7, 236, 7);
+}
+
 p, button, label, input, div.login{
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+input[type='tel']:valid,
 input[type='text']:valid,
 input[type='email']:valid{
     border: 1px solid rgb(7, 236, 7);
     box-shadow: none;
 }
 
+input[type='tel']:invalid:not(:focus):not(:placeholder-shown),
+input[type='tel']:invalid:not(:placeholder-shown),
 input[type='text']:invalid:not(:focus):not(:placeholder-shown),
 input[type='email']:invalid:not(:focus):not(:placeholder-shown),
 input[type='text']:invalid:not(:placeholder-shown),
@@ -127,6 +135,7 @@ input[type='email']:invalid:not(:placeholder-shown){
 }
 
 span.inMail{
+    display: none;
     position: absolute;
     color: rgb(255, 0, 0);
     text-align: right;
@@ -138,13 +147,29 @@ span.inMail{
 }
 
 footer{
+    width: 170px;
     position: relative;
 }
 
 footer > span{
+    width: 170px;
     position: absolute;
-    top:-30px;
+    bottom: 20px;
     right: 5px;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+span.help{
+    display: none;
+    position: absolute;
+}
+
+input[type='tel']:focus + span{
+    display: block;
+}
+
+input[type='tel'] + span{
+    width: fit-content;
 }
 
 @media (max-width: 840px){
@@ -173,16 +198,10 @@ footer > span{
     button{
         align-self: center;
     }
-
-   footer{
-    text-align: center;
-   }
-
-   footer > span{
-    position: absolute;
-    top:-100px;
-    right: -70px;
-    transform: rotate(90deg);
+    
+    footer > span{
+        bottom: -10px;
+        right: 10vw;
     }
 
    span.inMail{

@@ -35,22 +35,21 @@
                 <li>
                     <label for="email">Email*</label>
                     <input type="email" name="user_email" id="email" placeholder=" " required>
-                    <span class="inMail">You need to add an valid email</span>
                 </li>
                 <li>
-                    <label for="pNumber">Phone Number</label>
-                    <input type="tel" name="user_pNumber" id="pNumber" maxlength="10">
-                    <div></div>
+                    <label for="pNumber">Phone Number*</label>
+                    <input type="tel" name="user_pNumber" id="pNumber" placeholder=" " pattern="\d{4}[\-]\d{6}|\d{3}[\-]\d{7}|\d{10}" title="The number must be like: '1234-123456', '133-1234567', '0123456789'" maxlength="10" required>
+                    <span class="help">E.g: "1234-123456", "133-1234567", "0123456789"</span>
                 </li>
                 <li>
                     <label for="psw1">Password*</label>
-                    <input type="password" name="user_psw1" id="psw1" required>
-                    <div></div>
+                    <input type="password" name="user_psw1" id="psw1" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                    <span class="help">E.g: "1234-123456", "133-1234567", "0123456789"</span>
                 </li>
                 <li>
                     <label for="psw2">Confirm Password*</label>
                     <input type="password" name="user_psw2" id="psw2"required>
-                    <div></div>
+                    <span class="help">E.g: "1234-123456", "133-1234567", "0123456789"</span>
                 </li>
 
                 <li class="btn">
